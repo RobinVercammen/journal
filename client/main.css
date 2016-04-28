@@ -1,1 +1,60 @@
-/* CSS declarations go here */
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    min-width: 480px;
+    background-color: #BBBBBB;
+}
+
+h1{
+    text-align: center;
+}
+
+#container{
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+#today-container div textarea{
+    min-width: 480px;
+    max-width: 480px;
+    height: 150px;
+    font-size: 15px;
+    border: 1px solid #018EDA;
+}
+
+#today-container div .toggle-overview{
+    display: block;
+    max-width: 250px;
+    background-color: #FF5555;
+}
+
+#today-container div button{
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    color: rgb(240, 240, 240);
+    background-color: #018EDA;
+}
+
+#today-container div button.state-selection{
+    font-size: 5em;
+    width: 225px;
+    height: 225px;
+    margin: 5px;
+}
+
+#today-container div button.state-selection.selected{
+    border: 5px solid rgb(240, 240, 240)
+}
+
+#today-container div button.state-selection.yes{
+    border-radius: 50%;
+    background-color: #55FF55;
+}
+
+#today-container div button.state-selection.no{
+    border-radius: 50%;
+    background-color: #FF5555;
+}

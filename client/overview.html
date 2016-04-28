@@ -1,0 +1,23 @@
+<template name="overview">
+    <div id="overview-container">
+        <h1>How where previous days?</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Good Day</th>
+                <th>Comment</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each tableData}}
+                <tr>
+                    <td>{{date}}</td>
+                    <td>{{#if state}}&#10004;{{else}}&#10006;{{/if}}</td>
+                    <td>{{comment}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>

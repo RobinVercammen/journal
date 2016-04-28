@@ -1,0 +1,19 @@
+<template name="today">
+    <div id="today-container">
+    {{#if today}}
+    <div>
+        <h1>Was today a good day?</h1>
+        <div>
+            <button class="state-selection yes {{#if todaysInfo.state}}selected{{/if}}" id="yes-button">&#10004;</button>
+            <button class="state-selection no {{#unless todaysInfo.state}}selected{{/unless}}" id="no-button">&#10006;</button>
+            <textarea id="comment-textarea">{{todaysInfo.comment}}</textarea>
+        </div>
+        </div>
+    {{else}}
+        {{>overview}}
+    {{/if}}
+    <div>
+        <button id="toggle-overview" class="toggle-overview">Toggle Overview/Today</button>
+    </div>
+    </div>
+</template>
